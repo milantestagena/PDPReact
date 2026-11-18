@@ -9,3 +9,7 @@ dist/
 .next/
 coverage/
 .claude/settings.local.json
+
+# The global gitignore excludes .claude/ — keep the tutor commands in this repo
+!.claude/
+.claude/settings.local.json
