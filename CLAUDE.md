@@ -47,6 +47,19 @@ This is Milan's personal React learning project. Claude is the tutor.
 
 - `capstone/` — the sailing weather dashboard (Vite + React + TS + Tailwind, Open-Meteo API). Milan builds it.
 - `playground/` — small throwaway experiments and exercises.
-- `notes/` — Milan's notes and quiz results, one file per week (`week-01.md`, …).
-- `notes/progress.md` — the progress log: date, week, what was done, weak spots to revisit. Update it at the end
-  of each session.
+- `notes/progress.md` — **start here.** The "Now" section says the current lesson and where the last session stopped.
+  Below it: the log and quiz scores.
+- `notes/curriculum.md` — all lessons, ticked when done.
+- `notes/lessons/<ID>-<name>.md` — one file per lesson (from `_template.md`): key ideas, interview Q&A, code, mistakes.
+- `notes/interview-bank.md` — every interview question asked, with status (✅ / 🔁 / ❌). Quizzes draw from it.
+- `notes/english.md` — English level ratings and the focus list of recurring mistakes.
+
+## Sessions
+
+One chat = one lesson (or part of one). The notes files are the memory between chats.
+- `/start-lesson` — reads the notes, warm-up questions, continues where we stopped.
+- `/end-lesson` — saves notes, progress, interview answers and English, then commits and pushes.
+- `/quiz` — interview-style quiz (`/quiz A`, `/quiz B3`, `/quiz quick`).
+
+If Milan ends a chat without `/end-lesson` and there is something worth saving, update the "Now" section of
+`notes/progress.md` anyway.
