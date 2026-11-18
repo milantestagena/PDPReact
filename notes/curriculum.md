@@ -12,7 +12,7 @@ Every lesson has 4 parts:
 Stack: React 19.3, Vite, TypeScript, Tailwind 4, React Router 8, TanStack Query 5, Next.js 16 (module G).
 
 ## Module A — The render model
-- [ ] **A1. Components are functions.** JSX → `createElement` → plain objects. Render vs commit. Props are read-only. Pure components. *Setup: create the capstone with Vite.*
+- [x] **A1. Components are functions.** JSX → `createElement` → plain objects. Render vs commit. Props are read-only. Pure components. *Setup: create the capstone with Vite.*
 - [ ] **A2. Lists, keys, conditions, events.** Why `key` matters (and why the index is a bad key). `&&` and the `0` trap. Synthetic events.
 - [ ] **A3. Composition.** `children`, slot props, lifting content up. Prop drilling and how composition avoids it.
 - [ ] **Quiz A**
