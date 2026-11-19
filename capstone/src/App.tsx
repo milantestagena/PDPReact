@@ -1,41 +1,48 @@
-import WindCard, { type WindCardProps } from "./components/WindCard";
+import WindCard, { type WindSpot } from "./components/WindCard";
+import { useState } from "react";
 
 function App() {
-  const windData: WindCardProps[] = [
+  const [windData, setWindData] = useState<WindSpot[]>([
     {
       location: "San Francisco",
       windSpeedKnots: 15,
       directionDeg: 120,
+      gustKnots: 25,
+    },
+    {
+      location: "Boston",
+      windSpeedKnots: 11,
+      directionDeg: 140,
+      gustKnots: 18,
     },
     {
       location: "New York",
       windSpeedKnots: 10,
-      directionDeg: -50,
+      directionDeg: 50,
     },
     {
       location: "Chicago",
-      windSpeedKnots: 20,
+      windSpeedKnots: 23,
       directionDeg: 42,
+      gustKnots: 0,
     },
-  ];
+  ]);
+
+  const removeWindCard = (location: string) => {
+    setWindData((prevData) =>
+      prevData.filter((data) => data.location !== location),
+    );
+  };
 
   return (
     <>
-      <WindCard
-        location={windData[0].location}
-        windSpeedKnots={windData[0].windSpeedKnots}
-        directionDeg={windData[0].directionDeg}
-      />
-      <WindCard
-        location={windData[1].location}
-        windSpeedKnots={windData[1].windSpeedKnots}
-        directionDeg={windData[1].directionDeg}
-      />
-      <WindCard
-        location={windData[2].location}
-        windSpeedKnots={windData[2].windSpeedKnots}
-        directionDeg={windData[2].directionDeg}
-      />
+      {windData.map((data) => (
+        <WindCard
+          key={data.location}
+          {...data}
+          onRemove={() => removeWindCard(data.location)}
+        />
+      ))}
     </>
   );
 }
