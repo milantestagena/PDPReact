@@ -14,7 +14,7 @@ Stack: React 19.3, Vite, TypeScript, Tailwind 4, React Router 8, TanStack Query 
 ## Module A — The render model
 - [x] **A1. Components are functions.** JSX → `createElement` → plain objects. Render vs commit. Props are read-only. Pure components. *Setup: create the capstone with Vite.*
 - [x] **A2. Lists, keys, conditions, events.** Why `key` matters (and why the index is a bad key). `&&` and the `0` trap. Synthetic events.
-- [ ] **A3. Composition.** `children`, slot props, lifting content up. Prop drilling and how composition avoids it.
+- [x] **A3. Composition.** `children`, slot props, lifting content up. Prop drilling and how composition avoids it.
 - [ ] **Quiz A**
 
 ## Module B — State

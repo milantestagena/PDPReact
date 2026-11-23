@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 type WindSpot = {
   location: string;
   windSpeedKnots: number;
@@ -11,12 +13,9 @@ type WindCardProps = WindSpot & {
 
 function WindCard(props: WindCardProps) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-slate-900">
-          Location: {props.location}
-        </h2>
-
+    <Card
+      title={`Wind Spot: ${props.location}`}
+      actions={
         <button
           type="button"
           onClick={props.onRemove}
@@ -24,7 +23,8 @@ function WindCard(props: WindCardProps) {
         >
           Remove
         </button>
-      </div>
+      }
+    >
       <div className="mt-2 text-sm text-slate-700">
         <p>
           Wind Speed: {props.windSpeedKnots} knots{" "}
@@ -33,7 +33,7 @@ function WindCard(props: WindCardProps) {
         <p>Direction: {props.directionDeg}°</p>
         {props.gustKnots !== undefined && <p>Gust: {props.gustKnots} knots</p>}
       </div>
-    </div>
+    </Card>
   );
 }
 

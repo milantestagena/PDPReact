@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4">
       {windData.map((data) => (
         <WindCard
           key={data.location}
@@ -43,7 +43,7 @@ function App() {
           onRemove={() => removeWindCard(data.location)}
         />
       ))}
-    </>
+    </div>
   );
 }
 
