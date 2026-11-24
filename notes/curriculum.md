@@ -15,7 +15,7 @@ Stack: React 19.3, Vite, TypeScript, Tailwind 4, React Router 8, TanStack Query 
 - [x] **A1. Components are functions.** JSX → `createElement` → plain objects. Render vs commit. Props are read-only. Pure components. *Setup: create the capstone with Vite.*
 - [x] **A2. Lists, keys, conditions, events.** Why `key` matters (and why the index is a bad key). `&&` and the `0` trap. Synthetic events.
 - [x] **A3. Composition.** `children`, slot props, lifting content up. Prop drilling and how composition avoids it.
-- [ ] **Quiz A**
+- [x] **Quiz A** — 6.5 / 10 (2026-11-24)
 
 ## Module B — State
 - [ ] **B1. State is a snapshot.** `useState`, each render has its own values, batching, updater functions (`n => n + 1`).
