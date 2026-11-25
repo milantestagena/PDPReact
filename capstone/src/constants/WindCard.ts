@@ -1,0 +1,1 @@
+export const STRONG_WIND_KNOTS = 20;

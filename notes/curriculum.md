@@ -18,7 +18,7 @@ Stack: React 19.3, Vite, TypeScript, Tailwind 4, React Router 8, TanStack Query 
 - [x] **Quiz A** — 6.5 / 10 (2026-11-24)
 
 ## Module B — State
-- [ ] **B1. State is a snapshot.** `useState`, each render has its own values, batching, updater functions (`n => n + 1`).
+- [x] **B1. State is a snapshot.** `useState`, each render has its own values, batching, updater functions (`n => n + 1`).
 - [ ] **B2. Immutable updates.** Objects and arrays in state, why mutation doesn't re-render, referential equality.
 - [ ] **B3. Structuring state.** Derived state (don't store it), lifting state up, controlled vs uncontrolled inputs.
 - [ ] **B4. Keys reset state, `useReducer`.** When state is preserved or reset (position in the tree). Reducers.

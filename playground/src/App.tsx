@@ -1,11 +1,9 @@
-import ChildrenRender from "./ChildrenRender";
-import Drilling from "./Drilling";
+import Counter from "./StateVsVariable";
 
 function App() {
   return (
     <>
-      <Drilling />
-      <ChildrenRender />
+      <Counter />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { STRONG_WIND_KNOTS } from "../constants/WindCard";
 import Card from "./Card";
 
 type WindSpot = {
@@ -28,7 +29,7 @@ function WindCard(props: WindCardProps) {
       <div className="mt-2 text-sm text-slate-700">
         <p>
           Wind Speed: {props.windSpeedKnots} knots{" "}
-          {props.windSpeedKnots >= 20 && <span title="Strong wind">🚀</span>}
+          {props.windSpeedKnots >= STRONG_WIND_KNOTS && <span title="Strong wind">🚀</span>}
         </p>
         <p>Direction: {props.directionDeg}°</p>
         {props.gustKnots !== undefined && <p>Gust: {props.gustKnots} knots</p>}
